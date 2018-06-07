@@ -97,4 +97,59 @@ public class TacticsMove : MonoBehaviour {
 			next = next.parent;
 		}
 	}
+
+	public void Move()
+	{
+		if (path.Count > 0)
+		{
+			Tile t = path.Peek ();
+			Vector3 target = t.transform.position;
+
+			target.y += halfHeight + t.GetComponent<Collider>().bounds.extents.y;
+
+			if (Vector3.Distance (transform.position, target) >= 0.1f)
+			{
+				CalculateHeading (target);
+				SetHorizontalVelocity ();
+
+				transform.forward = heading;
+				transform.position += velocity * Time.deltaTime;
+			}
+			else
+			{
+				transform.position = target;
+				path.Pop ();
+			}
+		}
+		else
+		{
+			RemoveSelectableTiles ();
+			moving = false;
+		}
+	}
+
+	protected void RemoveSelectableTiles()
+	{
+		if (currentTile != null)
+		{
+			currentTile.current = false;
+			currentTile = null;
+		}
+		foreach (Tile tile in selectableTiles)
+		{
+			tile.Reset ();
+		}
+		selectableTiles.Clear ();
+	}
+
+	void CalculateHeading(Vector3 target)
+	{
+		heading = target - transform.position;
+		heading.Normalize();
+	}
+
+	void SetHorizontalVelocity()
+	{
+		velocity = heading * movespeed;
+	}
 }
