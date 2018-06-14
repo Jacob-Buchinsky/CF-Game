@@ -5,6 +5,9 @@ using UnityEngine;
 //Code adapted from Game Programming Academy's Tactics Movement Tutorial
 
 public class TacticsMove : MonoBehaviour {
+
+	public bool turn = false;
+
 	List<Tile> selectableTiles = new List<Tile>();
 	GameObject[] tiles;
 
@@ -15,16 +18,25 @@ public class TacticsMove : MonoBehaviour {
 	public int move = 5;
 	public float jumpHeight = 2;
 	public float movespeed = 2;
+	public float jumpVelocity = 4.5f;
 
 	Vector3 velocity = new Vector3();
 	Vector3 heading = new Vector3();
 
 	float halfHeight = 0;
 
+	bool jumpingUp = false;
+	bool fallingDown = false;
+	bool movingEdge = false;
+
+	Vector3 jumpTarget;
+
 	protected void init(){
 		tiles = GameObject.FindGameObjectsWithTag ("Tile");
 
 		halfHeight = GetComponent<Collider> ().bounds.extents.y;
+
+		TurnManager.AddUnit (this);
 	}
 
 	public void GetCurrentTile()
@@ -102,29 +114,43 @@ public class TacticsMove : MonoBehaviour {
 	{
 		if (path.Count > 0)
 		{
-			Tile t = path.Peek ();
+			Tile t = path.Peek();
 			Vector3 target = t.transform.position;
 
+			//Calculate the unit's position on top of the target tile
 			target.y += halfHeight + t.GetComponent<Collider>().bounds.extents.y;
 
-			if (Vector3.Distance (transform.position, target) >= 0.1f)
+			if (Vector3.Distance(transform.position, target) >= 0.05f)
 			{
-				CalculateHeading (target);
-				SetHorizontalVelocity ();
+				bool jump = transform.position.y != target.y;
 
+				if (jump)
+				{
+					Jump(target);
+				}
+				else
+				{
+					CalculateHeading(target);
+					SetHorizontalVelocity();
+				}
+
+				//Locomotion
 				transform.forward = heading;
 				transform.position += velocity * Time.deltaTime;
 			}
 			else
 			{
+				//Tile center reached
 				transform.position = target;
-				path.Pop ();
+				path.Pop();
 			}
 		}
 		else
 		{
-			RemoveSelectableTiles ();
+			RemoveSelectableTiles();
 			moving = false;
+
+			TurnManager.EndTurn ();
 		}
 	}
 
@@ -151,5 +177,109 @@ public class TacticsMove : MonoBehaviour {
 	void SetHorizontalVelocity()
 	{
 		velocity = heading * movespeed;
+	}
+
+	void Jump(Vector3 target)
+	{
+		if (fallingDown)
+		{
+			FallDownward(target);
+		}
+		else if (jumpingUp)
+		{
+			JumpUpward(target);
+		}
+		else if (movingEdge)
+		{
+			MoveToEdge();
+		}
+		else
+		{
+			PrepareJump(target);
+		}
+	}
+
+	void PrepareJump(Vector3 target)
+	{
+		float targetY = target.y;
+		target.y = transform.position.y;
+
+		CalculateHeading(target);
+
+		if (transform.position.y > targetY)
+		{
+			fallingDown = false;
+			jumpingUp = false;
+			movingEdge = true;
+
+			jumpTarget = transform.position + (target - transform.position) / 2.0f;
+		}
+		else
+		{
+			fallingDown = false;
+			jumpingUp = true;
+			movingEdge = false;
+
+			velocity = heading * movespeed / 3.0f;
+
+			float difference = targetY - transform.position.y;
+
+			velocity.y = jumpVelocity * (0.5f + difference / 2.0f);
+		}
+	}
+
+	void FallDownward(Vector3 target)
+	{
+		velocity += Physics.gravity * Time.deltaTime;
+
+		if (transform.position.y <= target.y)
+		{
+			fallingDown = false;
+			jumpingUp = false;
+			movingEdge = false;
+
+			Vector3 p = transform.position;
+			p.y = target.y;
+			transform.position = p;
+
+			velocity = new Vector3();
+		}
+	}
+
+	void JumpUpward(Vector3 target)
+	{
+		velocity += Physics.gravity * Time.deltaTime;
+
+		if (transform.position.y > target.y)
+		{
+			jumpingUp = false;
+			fallingDown = true;
+		}
+	}
+
+	void MoveToEdge()
+	{
+		if (Vector3.Distance(transform.position, jumpTarget) >= 0.05f)
+		{
+			SetHorizontalVelocity();
+		}
+		else
+		{
+			movingEdge = false;
+			fallingDown = true;
+
+			velocity /= 5.0f;
+			velocity.y = 1.5f;
+		}
+	}
+
+	public void BeginTurn()
+	{
+		turn = true;
+	}
+
+	public void EndTurn()
+	{
+		turn = false;
 	}
 }
