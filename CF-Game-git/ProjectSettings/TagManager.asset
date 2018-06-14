@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BGM
   - Easy
+  - Tile
+  - Enemy
   layers:
   - Default
   - TransparentFX
