@@ -8,8 +8,9 @@ public class SceneController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("TestMission"));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("SocialHub"));
+    }
 	
 	// Update is called once per frame
 	void Update () {

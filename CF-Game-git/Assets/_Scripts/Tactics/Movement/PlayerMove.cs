@@ -5,6 +5,7 @@ using UnityEngine;
 //Code adapted from Game Programming Academy's Tactics Movement Tutorial
 
 public class PlayerMove : TacticsMove {
+   public GameObject Controller;
     public float HP;
     public int ATK;
     public int DEF;
@@ -14,6 +15,7 @@ public class PlayerMove : TacticsMove {
     // Use this for initialization
     void Start() {
         init();
+        Controller = GameObject.Find("SceneController");
     }
 
     // Update is called once per frame
@@ -59,6 +61,9 @@ public class PlayerMove : TacticsMove {
     void TakeDamage(float damage) {
         HP = (HP - damage);
         Debug.Log("damage has been dealt: Current HP is " + HP);
+        if (HP <= 0) {
+            Die();
+        }
 
 
     }
@@ -94,9 +99,19 @@ public class PlayerMove : TacticsMove {
 
         
 
-        void Attack(GameObject enemy) {
+    void Attack(GameObject enemy) {
            float damage = Random.Range(ATK - (ATK * .2f), ATK + (ATK * .2f));
            TakeDamage(damage);
+    }
+    void Die() {
+        //play death animation
+        if (this.tag == "Player")
+        {
+            Controller.GetComponent<SceneControllerTest>().DecrementPU();
         }
+        else Controller.GetComponent<SceneControllerTest>().DecrementEU();
+        Destroy(this);
+
+    }
 }
 
