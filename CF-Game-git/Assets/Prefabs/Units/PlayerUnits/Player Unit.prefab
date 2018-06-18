@@ -103,6 +103,10 @@ MonoBehaviour:
   movespeed: 2
   jumpVelocity: 4.5
   actualTargetTile: {fileID: 0}
+  HP: 100
+  ATK: 50
+  DEF: 0
+  range: 0
 --- !u!136 &136191087716307010
 CapsuleCollider:
   m_ObjectHideFlags: 1
