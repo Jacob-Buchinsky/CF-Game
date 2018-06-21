@@ -11,6 +11,8 @@ public class PlayerMove : TacticsMove {
     public int DEF;
     public int range;
 
+	private bool inRange = false;
+
 
     // Use this for initialization
     void Start() {
@@ -70,9 +72,7 @@ public class PlayerMove : TacticsMove {
     void SelectTarget(GameObject target) {
         if (Input.GetMouseButtonUp(1)) {
             GameObject e = null;
-
-
-
+			Tile t = null;
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -84,24 +84,21 @@ public class PlayerMove : TacticsMove {
                     }
                     if (hit.collider.tag == "Tile")
                     {
-                        Tile t = hit.collider.GetComponent<Tile>();
+                        t = hit.collider.GetComponent<Tile>();
+						Attack (e);
                         if (t.selectable)
                         {
-                            Attack(e);
+                          Attack(e);
                         }
                     }
                 }
-
-
             }
         }
     }
 
-        
-
     void Attack(GameObject enemy) {
-           float damage = Random.Range(ATK - (ATK * .2f), ATK + (ATK * .2f));
-           TakeDamage(damage);
+			float damage = Random.Range (ATK - (ATK * .2f), ATK + (ATK * .2f));
+			TakeDamage (damage);  
     }
     void Die() {
         //play death animation
@@ -113,5 +110,11 @@ public class PlayerMove : TacticsMove {
         Destroy(this);
 
     }
+
+	void OnTriggerEnter(Collider other){
+		if (other.tag.Equals ("enemy")) {
+			inRange = true;
+		}
+	}
 }
 

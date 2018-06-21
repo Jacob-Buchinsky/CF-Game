@@ -97,7 +97,7 @@ public class TacticsMove : MonoBehaviour {
 			}
 		}
  	}
-
+		
 	public void MoveToTile(Tile tile)
 	{
 		path.Clear ();
