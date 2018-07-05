@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
-  m_Name: new gear
+  m_Name: Heavy Chassis
   m_EditorClassIdentifier: 
   name: 
   description: 

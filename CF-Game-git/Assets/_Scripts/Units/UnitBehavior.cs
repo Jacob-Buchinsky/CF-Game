@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MyUnit : Unit
+public class UnitBehavior : Unit
 {
     public Color PlayerColor;
     public string UnitName;
