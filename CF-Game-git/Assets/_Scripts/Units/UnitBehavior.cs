@@ -8,6 +8,7 @@ public class UnitBehavior : Unit
     public Color PlayerColor;
     public string UnitName;
     private Transform Highlighter;
+	public Image UnitImage;
 
     private float offset = 1.1f;
 

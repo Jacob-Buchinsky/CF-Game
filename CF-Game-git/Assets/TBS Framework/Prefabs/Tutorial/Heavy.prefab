@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1682080698279476}
+  m_RootGameObject: {fileID: 1820771073791276}
   m_IsPrefabParent: 1
---- !u!1 &1682080698279476
+--- !u!1 &1820771073791276
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4521624185947670}
-  - component: {fileID: 33287143408611590}
-  - component: {fileID: 65236289771347302}
-  - component: {fileID: 23918962449386502}
-  - component: {fileID: 114317137229783320}
+  - component: {fileID: 4942703058193752}
+  - component: {fileID: 33273557076532458}
+  - component: {fileID: 65258525027465268}
+  - component: {fileID: 23227288417001064}
+  - component: {fileID: 114710399620077702}
   m_Layer: 0
   m_Name: Heavy
   m_TagString: Untagged
@@ -30,25 +30,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4521624185947670
+--- !u!4 &4942703058193752
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682080698279476}
+  m_GameObject: {fileID: 1820771073791276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 2, y: 1, z: 1}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23918962449386502
+--- !u!23 &23227288417001064
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682080698279476}
+  m_GameObject: {fileID: 1820771073791276}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -78,31 +78,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33287143408611590
+--- !u!33 &33273557076532458
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682080698279476}
+  m_GameObject: {fileID: 1820771073791276}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65236289771347302
+--- !u!65 &65258525027465268
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682080698279476}
+  m_GameObject: {fileID: 1820771073791276}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114317137229783320
+--- !u!114 &114710399620077702
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682080698279476}
+  m_GameObject: {fileID: 1820771073791276}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 551398e8f97d7b04294d7faa36ea0de3, type: 3}
@@ -117,4 +117,4 @@ MonoBehaviour:
   ActionPoints: 1
   PlayerNumber: 0
   PlayerColor: {r: 0, g: 0, b: 1, a: 0}
-  UnitName: 
+  UnitName: Gilgamesh
