@@ -1,12 +1,11 @@
-﻿public class Archer : MyUnit
+﻿public class Tech : UnitBehavior
 {
 	protected override void Defend(Unit other, int damage)
 	{
 		var realDamage = damage;
-		if (other is Paladin)
-			realDamage *= 2;//paladin deals double damage to archer.
+		if (other is Scout)
+			realDamage *= 2;//Scout Units deals double damage to Heavy Units.
 
 		base.Defend(other, realDamage);
 	}
 }
-

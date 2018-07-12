@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1145596100778158}
+  m_RootGameObject: {fileID: 1820771073791276}
   m_IsPrefabParent: 1
---- !u!1 &1145596100778158
+--- !u!1 &1820771073791276
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4861289881058722}
-  - component: {fileID: 33019962531355544}
-  - component: {fileID: 23144166964875750}
-  - component: {fileID: 114262854349150654}
-  - component: {fileID: 136191087716307010}
+  - component: {fileID: 4942703058193752}
+  - component: {fileID: 33273557076532458}
+  - component: {fileID: 65258525027465268}
+  - component: {fileID: 23227288417001064}
+  - component: {fileID: 114710399620077702}
   m_Layer: 0
-  m_Name: Player Unit
-  m_TagString: Player
+  m_Name: Heavy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4861289881058722
+--- !u!4 &4942703058193752
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1145596100778158}
+  m_GameObject: {fileID: 1820771073791276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 1, z: -8.5}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23144166964875750
+--- !u!23 &23227288417001064
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1145596100778158}
+  m_GameObject: {fileID: 1820771073791276}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a875b904112741c44bccd6ed05c506b5, type: 2}
+  - {fileID: 2100000, guid: d6b14c82244676148b8548fd0a948a84, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -78,45 +78,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33019962531355544
+--- !u!33 &33273557076532458
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1145596100778158}
+  m_GameObject: {fileID: 1820771073791276}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114262854349150654
+--- !u!65 &65258525027465268
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820771073791276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114710399620077702
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1145596100778158}
+  m_GameObject: {fileID: 1820771073791276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b48161cef302ef4a830815de20c117a, type: 3}
+  m_Script: {fileID: 11500000, guid: 551398e8f97d7b04294d7faa36ea0de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turn: 0
-  moving: 0
-  move: 5
-  jumpHeight: 2
-  movespeed: 2
-  jumpVelocity: 4.5
-  actualTargetTile: {fileID: 0}
-  HP: 100
-  ATK: 50
-  DEF: 0
-  range: 0
---- !u!136 &136191087716307010
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1145596100778158}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  HitPoints: 40
+  AttackRange: 2
+  AttackFactor: 10
+  DefenceFactor: 6
+  MovementPoints: 1
+  MovementSpeed: 5
+  ActionPoints: 1
+  PlayerNumber: 0
+  PlayerColor: {r: 0, g: 0, b: 1, a: 0}
+  UnitName: Gilgamesh
