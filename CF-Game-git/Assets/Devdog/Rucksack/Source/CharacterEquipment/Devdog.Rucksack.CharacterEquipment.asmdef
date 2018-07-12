@@ -1,0 +1,9 @@
+{
+    "name": "Devdog.Rucksack.CharacterEquipment",
+    "references": [
+        "Devdog.Rucksack.General",
+        "Devdog.Rucksack.Collections"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

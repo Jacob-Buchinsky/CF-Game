@@ -1,0 +1,11 @@
+{
+    "name": "Devdog.Rucksack.Items",
+    "references": [
+        "Devdog.Rucksack.Currencies",
+        "Devdog.Rucksack.General",
+        "Devdog.General2",
+        "Devdog.General2.Interaction"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

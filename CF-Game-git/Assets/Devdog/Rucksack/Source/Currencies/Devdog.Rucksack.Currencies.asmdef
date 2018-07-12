@@ -1,0 +1,8 @@
+{
+    "name": "Devdog.Rucksack.Currencies",
+    "references": [
+        "Devdog.Rucksack.General"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

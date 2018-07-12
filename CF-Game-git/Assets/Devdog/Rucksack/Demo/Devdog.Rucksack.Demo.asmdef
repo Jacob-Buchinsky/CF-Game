@@ -1,0 +1,11 @@
+{
+    "name": "Devdog.Rucksack.Demo",
+    "references": [
+        "Devdog.General2",
+        "Devdog.General2.Interaction",
+        "Devdog.General2.Localization",
+        "Devdog.General2.Serialization"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

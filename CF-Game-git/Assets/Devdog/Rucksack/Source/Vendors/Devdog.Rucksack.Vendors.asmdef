@@ -1,0 +1,10 @@
+{
+    "name": "Devdog.Rucksack.Vendors",
+    "references": [
+        "Devdog.Rucksack.Currencies",
+        "Devdog.Rucksack.General",
+        "Devdog.Rucksack.Collections"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

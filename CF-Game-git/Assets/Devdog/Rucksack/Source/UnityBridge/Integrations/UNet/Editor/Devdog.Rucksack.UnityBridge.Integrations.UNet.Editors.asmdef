@@ -1,0 +1,27 @@
+{
+    "name": "Devdog.Rucksack.UnityBridge.Integrations.UNet.Editors",
+    "references": [
+        "Devdog.Rucksack.UnityBridge.Integrations.UNet",
+        "Devdog.Rucksack.UnityBridge.Integrations.Networking",
+        "Devdog.General2",
+        "Devdog.General2.Editors",
+        "Devdog.General2.Interaction",
+        "Devdog.Rucksack.General",
+        "Devdog.Rucksack.UnityBridge",
+        "Devdog.Rucksack.CharacterEquipment",
+        "Devdog.Rucksack.CharacterEquipment.Items",
+        "Devdog.Rucksack.Collections",
+        "Devdog.Rucksack.Crafting",
+        "Devdog.Rucksack.Currencies",
+        "Devdog.Rucksack.Database",
+        "Devdog.Rucksack.Generators",
+        "Devdog.Rucksack.Items",
+        "Devdog.Rucksack.Vendors",
+        "Devdog.Rucksack.UnityBridge.Editors",
+        "Devdog.Rucksack.UnityBridge.Integrations.Networking.Editors"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

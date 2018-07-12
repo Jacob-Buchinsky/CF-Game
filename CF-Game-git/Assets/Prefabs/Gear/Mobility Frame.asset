@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
   m_Name: Mobility Frame
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Mobility Frame
+  description: A lightweight chassis focused on mobility
   artwork: {fileID: 0}
-  Armor: 0
-  Mobility: 0
+  Armor: 5
+  Mobility: 2
   Health: 0
+  CostInStore: 100

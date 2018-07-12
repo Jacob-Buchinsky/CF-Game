@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3f70e8a76806945b1b862c0334a021, type: 3}
+  m_Name: enUS
+  m_EditorClassIdentifier: 
+  _serializedJsonString: "{\"_lang\":\"en-US\",\"_localizedStrings\":{\"NO_KEY\":\"\",\"2f2b5126-0e17-4a8f-8600-999b329ab627\":\"Cylinder
+    Description\",\"eb85bfe6-9ff3-4689-8c23-4b2dd281016d\":\"Some Name\",\"\u23F1\x06\":\"Gold\",\"b5467f83-8bb0-4536-844e-15db4d214633\":\"Gems\",\"7b27cd3c-22b1-4adb-9c1b-1a493bf78e87\":\"Gem\",\"82d0ca7c-35a2-4f4d-8461-6ccf28126169\":\"Gold\",\"1dfd2c75-afbd-45a0-a331-b69326a2e7a9\":\"GLD\",\"\U00093CC6\":\"Gem\",\"tag:yaml.org,2002:str\":\"Gems\",\"8b69a2b2-bee6-4beb-b34d-3713f2ab441f\":\"Cube\",\"987477cb-f973-4009-ac52-19fdb50563fe\":\"Simple
+    cube\",\"81e4e531-d533-481b-b227-16fddd3ea45a\":\"Some Description\",\"e4bb29b3-ca17-4c4e-89b3-1cde0f3c1c93\":\"Cylinder\",\"ec629eee-70b1-4c34-8289-e544eed9f287\":\"Epic
+    Sword\",\"fd949b57-6bbe-4581-a41e-65a3abb37eb0\":\"Sword\",\"ec859117-a4f6-4a73-abcc-70a6825c6c20\":\"Some
+    Item Name\",\"83f0942b-4c1f-41a9-963b-93ef7e654509\":\"Some Item Description\",\"87400e07-38eb-4a69-9f9f-d9f2f553c6a4\":\"New
+    Sword\",\"0cfa29c8-821d-464c-bb8d-2962c24058b2\":\"New Sword test\",\"d95e8098-26d1-4d21-beec-d9123671d653\":\"Cape\",\"6a7a2494-7015-4f79-8775-db3c1800e6f1\":\"Cape
+    of the powerful wizard Aragar\",\"19c61989-157c-4d4f-93d7-5ab50efccdc7\":\"Some
+    Item\",\"384dd2d1-445d-40ed-92e3-11272a77b9b2\":\"Helicopter Pad\",\"ecdde5c6-3321-408b-b047-7dc9e9fa02bc\":\"A
+    small helicopter pad.\",\"f1cb6f77-57e7-421c-b441-a64efe2bb934\":\"Sword\",\"ace84e24-26c6-424e-a9c2-9fdfa01b0273\":\"Shield\",\"81c872fb-1ff6-4245-a1b8-ae32e5ee3ade\":\"Cape\",\"530fba60-1e3e-4776-b777-dc71cb503410\":\"Cape
+    Test\",\"c5059569-b5db-4da8-bb51-f3e9e4750193\":\"Cape\",\"66812606-a371-4a95-8ec2-4aa75af58602\":\"2
+    Handed sword\",\"f037cec7-292b-4548-90b1-023d1dfd1abf\":\"Some Name\",\"83adb609-4b6c-45cc-a8d0-1ffa932e8b4f\":\"Some
+    description\"},\"_localizedObjects\":{}}"
+  _objectReferences: []
+  _lang: en-US

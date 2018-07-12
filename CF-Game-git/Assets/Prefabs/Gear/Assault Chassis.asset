@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
   m_Name: Assault Chassis
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Assault Chassis
+  description: A medium chassis providing mobility and armor at the cost of health
   artwork: {fileID: 0}
-  Armor: 0
-  Mobility: 0
-  Health: 0
+  Armor: 25
+  Mobility: 1
+  Health: -10
+  CostInStore: 100

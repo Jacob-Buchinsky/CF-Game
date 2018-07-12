@@ -1,0 +1,21 @@
+{
+    "name": "Devdog.Rucksack.UnityBridge",
+    "references": [
+        "Devdog.General2",
+        "Devdog.General2.Interaction",
+        "Devdog.General2.Localization",
+        "Devdog.General2.Serialization",
+        "Devdog.Rucksack.CharacterEquipment",
+        "Devdog.Rucksack.CharacterEquipment.Items",
+        "Devdog.Rucksack.Collections",
+        "Devdog.Rucksack.Crafting",
+        "Devdog.Rucksack.Currencies",
+        "Devdog.Rucksack.Database",
+        "Devdog.Rucksack.General",
+        "Devdog.Rucksack.Generators",
+        "Devdog.Rucksack.Items",
+        "Devdog.Rucksack.Vendors"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

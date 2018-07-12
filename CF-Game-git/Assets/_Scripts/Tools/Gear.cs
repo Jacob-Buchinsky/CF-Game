@@ -15,6 +15,7 @@ public class Gear : ScriptableObject
     public int Armor;
     public int Mobility;
     public int Health;
+    public int CostInStore;
 
     public void Print()
     {
