@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3f70e8a76806945b1b862c0334a021, type: 3}
   m_Name: MainLanguageDb
   m_EditorClassIdentifier: 
-  _serializedJsonString: '{"_lang":"en-US","_localizedStrings":{"2ef6f1b3-eea8-4673-9656-6dfdf3651806":"Stim
+  _serializedJsonString: '{"_lang":"en-US","_localizedStrings":{"NO_KEY":"","2ef6f1b3-eea8-4673-9656-6dfdf3651806":"Stim
     Pack","d2751c1c-5e6d-4502-a140-740e54d8a8c7":"Heals X health"},"_localizedObjects":{}}'
   _objectReferences: []
   _lang: en-US

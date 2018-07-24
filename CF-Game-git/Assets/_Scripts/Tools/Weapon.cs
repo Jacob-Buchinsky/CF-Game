@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new weapon", menuName = "weapons")]
-public class Weapon : ScriptableObject {
+public class Weapon : Item {
 
     // Use this for initialization
     public new string name;
@@ -11,11 +11,15 @@ public class Weapon : ScriptableObject {
 
     public Sprite artwork;
 
-    public int damage;
-    public int accuracy;
-    public int range;
+    public int Power;
+    public int Accuracy;
+    public int Range;
+    public int Movement;
+    public int Health;
+    public int CostInStore;
+    public int Ammo;
 
     public void Print() {
-        Debug.Log(name + ": " + description + " The Weapon has " + accuracy + " accuracy and " + range + " range");
+        Debug.Log(name + ": " + description + " The Weapon has " + Accuracy + " accuracy and " + Range + " range");
     }
 }

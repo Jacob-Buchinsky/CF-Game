@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Name: Mobility Frame
   m_EditorClassIdentifier: 
   name: Mobility Frame
+  icon: {fileID: 0}
+  isDefaultItem: 0
+  name: Mobility Frame
   description: A lightweight chassis focused on mobility
   artwork: {fileID: 0}
   Armor: 5
-  Mobility: 2
+  Shields: 5
+  Movement: 3
   Health: 0
   CostInStore: 100
+  Ammo: 0
+  Power: 0
+  Energy: 15
+  Range: 0
+  equipSlot: 0
