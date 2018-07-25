@@ -17,7 +17,7 @@ public class StoreController : MonoBehaviour {
 	}
     private void OnTriggerStay(Collider other)
     {
-        GameObject varGameObject = GameObject.FindWithTag("Player"); 
+        GameObject varGameObject = GameObject.FindWithTag("Player");
         collided = true;
         canvasE.gameObject.SetActive(true);
         if (Input.GetKeyDown(KeyCode.E)) {

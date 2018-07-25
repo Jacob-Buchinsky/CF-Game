@@ -12,15 +12,8 @@ MonoBehaviour:
   m_Name: ChainSword
   m_EditorClassIdentifier: 
   name: ChainSword
-  icon: {fileID: 0}
-  isDefaultItem: 0
-  name: ChainSword
   description: A motorized toothed sword
   artwork: {fileID: 0}
-  Power: 30
-  Accuracy: 80
-  Range: 100
-  Movement: 1
-  Health: 0
-  CostInStore: 0
-  Ammo: 999
+  damage: 75
+  accuracy: 80
+  range: 1
