@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Name: Heavy Chassis
   m_EditorClassIdentifier: 
   name: Heavy Chassis
+  icon: {fileID: 0}
+  isDefaultItem: 0
+  name: Heavy Chassis
   description: A heavily armored large chassis
   artwork: {fileID: 0}
   Armor: 20
-  Mobility: -1
+  Shields: 20
+  Movement: -1
   Health: 25
   CostInStore: 100
+  Ammo: 0
+  Power: 0
+  Energy: 0
+  Range: 0
+  equipSlot: 0

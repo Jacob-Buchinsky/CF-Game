@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("TestMission"));
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("TestMission2"));
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("SocialHub"));
     }
 	
@@ -17,7 +17,7 @@ public class SceneController : MonoBehaviour {
 		
 	}
     public void LoadTestMission() {
-        SceneManager.LoadSceneAsync("TestMission", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("TestMission2", LoadSceneMode.Additive);
 
 
     }
