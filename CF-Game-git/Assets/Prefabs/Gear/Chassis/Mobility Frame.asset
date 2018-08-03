@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
+  m_Name: Mobility Frame
+  m_EditorClassIdentifier: 
+  name: Mobility Frame
+  icon: {fileID: 21300000, guid: a0a283159645ae448afe71692d340ce2, type: 3}
+  isDefaultItem: 0
+  equipSlot: 0
+  name: Mobility Frame
+  description: A lightweight chassis focused on mobility
+  artwork: {fileID: 0}
+  Armor: 5
+  Shields: 5
+  Movement: 3
+  Health: 0
+  CostInStore: 100
+  Ammo: 0
+  Power: 0
+  Energy: 15
+  Range: 0

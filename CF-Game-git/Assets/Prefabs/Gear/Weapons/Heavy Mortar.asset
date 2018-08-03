@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
+  m_Name: Heavy Mortar
+  m_EditorClassIdentifier: 
+  name: Heavy Mortar
+  icon: {fileID: 21300000, guid: 152568c5b03b3a34bb7974bcaf156e12, type: 3}
+  isDefaultItem: 0
+  equipSlot: 3
+  name: Heavy Mortar
+  description: 
+  artwork: {fileID: 21300000, guid: 152568c5b03b3a34bb7974bcaf156e12, type: 3}
+  Armor: 0
+  Shields: 0
+  Movement: -1
+  Health: 0
+  CostInStore: 0
+  Ammo: 0
+  Power: 30
+  Energy: 0
+  Range: 3

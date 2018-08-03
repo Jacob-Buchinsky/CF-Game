@@ -8,19 +8,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858060cbf8e0f843b4dc417e49dce7e, type: 3}
-  m_Name: Flamethrower
+  m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
+  m_Name: Consumable Place Holder
   m_EditorClassIdentifier: 
-  name: Flamethrower
-  icon: {fileID: 21300000, guid: 85977e5eb5155dd449765f9c97f8ca34, type: 3}
+  name: Consumable
+  icon: {fileID: 21300000, guid: 8c05517bb9e0dab4093a381839ce268a, type: 3}
   isDefaultItem: 0
-  name: Flamethrower
-  description: A flamethrower
+  equipSlot: 4
+  name: Consumable
+  description: 
   artwork: {fileID: 0}
-  Power: 0
-  Accuracy: 0
-  Range: 0
+  Armor: 0
+  Shields: 0
   Movement: 0
   Health: 0
   CostInStore: 0
   Ammo: 0
+  Power: 0
+  Energy: 0
+  Range: 0

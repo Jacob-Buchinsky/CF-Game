@@ -27,7 +27,10 @@ public class Gear : Item
     public override void Use()
     {
         base.Use();
+        Debug.Log("Attempting Ovveride of Use()");
         EquipmentManager.instance.Equip(this);
+
+        // RemoveFromInventory();
     }
 
     public void Print()
@@ -35,4 +38,4 @@ public class Gear : Item
         Debug.Log(name + ": " + description + " The Gear has " + Armor + " Armor and " + Movement + " Mobility, and " + Health + " bonus health");
     }
 }
-public enum EquipmentSlot { Chassis, PowerSource, Legs, Weapon}
+public enum EquipmentSlot { Chassis, PowerSource, Legs, Weapon, Consumable}

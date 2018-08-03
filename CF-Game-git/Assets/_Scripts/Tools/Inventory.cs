@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour {
     }
 
     #endregion
+    public InventoryUI UI;
 
     public int space = 12;
 
@@ -35,19 +36,24 @@ public class Inventory : MonoBehaviour {
             }
             items.Add(item);
             Debug.Log("Item ADDED");
+            UI.UpdateUI();
         }
         
     }
 
     public void Remove (Item item)
     {
+        Debug.Log("REMOVING ITEM FROM LIST: " + item);
         items.Remove(item);
+        UI.UpdateUI();
     }
 
     public void Start() {
         foreach (Item ITEM in items) {
-            Add(ITEM);
-            Debug.Log(ITEM.name);
+            Debug.Log(ITEM + " In Inventory");
         }
+        Debug.Log("YOU BETTER WORK");
+        UI.FixUIBug();
+        UI.UpdateUI();
     }
 }

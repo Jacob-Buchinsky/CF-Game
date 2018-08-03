@@ -9,21 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: caf997b440053f442bef141bdb96d51a, type: 3}
-  m_Name: Heavy Chassis
+  m_Name: Miniturized Fusion Reactor
   m_EditorClassIdentifier: 
-  name: Heavy Chassis
-  icon: {fileID: 0}
+  name: Miniturized Fusion reactor
+  icon: {fileID: 21300000, guid: e5b4c539732e8ff4980306e766e5a07d, type: 3}
   isDefaultItem: 0
-  name: Heavy Chassis
-  description: A heavily armored large chassis
+  equipSlot: 1
+  name: Miniturized Fusion Reactor
+  description: 
   artwork: {fileID: 0}
-  Armor: 20
+  Armor: 0
   Shields: 20
-  Movement: -1
-  Health: 25
-  CostInStore: 100
-  Ammo: 0
+  Movement: 0
+  Health: 0
+  CostInStore: 0
+  Ammo: 20
   Power: 0
-  Energy: 0
+  Energy: 10
   Range: 0
-  equipSlot: 0

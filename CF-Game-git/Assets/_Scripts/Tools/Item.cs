@@ -12,8 +12,14 @@ public class Item : ScriptableObject {
         Debug.Log("using" + name);
     }
 
-    public void RemovalFromInventory()
+    public virtual Sprite GetIcon()
     {
+        return icon;
+    }
+
+    public void RemoveFromInventory()
+    {
+        Debug.Log("removing from inventory");
         Inventory.instance.Remove(this);
     }
 }
